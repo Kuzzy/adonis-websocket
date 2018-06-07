@@ -11,5 +11,7 @@ module.exports = {
   |
   */
   useHttpServer: true,
-  useUws: false
+  useUws: false,
+  pingTimeout: 60000,
+  pingInterval: 25000,
 }
