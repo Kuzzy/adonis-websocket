@@ -78,11 +78,12 @@ class Ws {
    * @param {Object} server
    */
   attach (server) {
-    let option = {}
-    if (this.config.useUws) {
-      option = { wsEngine: 'uws' }
-    }
-    this.io = socketio(server, option)
+    let options = {}
+    if (this.config.useUws)
+      options = { wsEngine: 'uws' }
+    options.pingTimeout = this.config.pingTimeout || 60000
+    options.pingInterval = this.config.pingInterval || 25000
+    this.io = socketio(server, options)
   }
 
   /**
