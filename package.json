@@ -56,7 +56,7 @@
     "node-exceptions": "^1.0.3",
     "resetable": "^1.0.1",
     "socket.io": "^1.5.1",
-    "uws": "git://github.com/mmdevries/uws.git"
+    "uws": "mmdevries/uws#dfc9305bdc195da02bb5a448020a8a37db5df2d3"
   },
   "repository": {
     "type": "git",
