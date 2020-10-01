@@ -83,6 +83,7 @@ class Ws {
       options = { wsEngine: 'uws' }
     options.pingTimeout = this.config.pingTimeout || 60000
     options.pingInterval = this.config.pingInterval || 25000
+    options.perMessageDeflate = false
     this.io = socketio(server, options)
   }
 
